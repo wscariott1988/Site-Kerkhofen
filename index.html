@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerkhofen Móveis Sob Medida</title>
+    <meta name="description" content="Marcenaria sob medida de alto padrão no Vale do Sinos, Serra e Grande Porto Alegre. Parceira de Arquitetos e Designers de Interiores.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F12F37', // Vermelho Kerkhofen
+                        bglight: '#E6E6E6', // Fundo gelo solicitado
+                        dark: '#1a1a1a',
+                        wood: '#8b5a2b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-bglight text-dark font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="header">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Tipográfica -->
+            <a href="#" class="font-heading font-bold text-3xl tracking-wider text-dark group">
+                KER<span class="text-primary group-hover:text-dark transition-colors duration-300">K</span>HOFEN
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#diferenciais" class="text-sm font-medium hover:text-primary transition-colors">Essência</a>
+                <a href="#arquitetos" class="text-sm font-medium hover:text-primary transition-colors">Para Arquitetos</a>
+                <a href="#portfolio" class="text-sm font-medium hover:text-primary transition-colors">Portfólio</a>
+                <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Orçamento</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-dark focus:outline-none" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Nav (Hidden by default) -->
+        <div class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full hidden flex-col items-center py-4 space-y-4" id="mobile-nav">
+            <a href="#diferenciais" class="text-sm font-medium hover:text-primary transition-colors">Essência</a>
+            <a href="#arquitetos" class="text-sm font-medium hover:text-primary transition-colors">Para Arquitetos</a>
+            <a href="#portfolio" class="text-sm font-medium hover:text-primary transition-colors">Portfólio</a>
+            <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition-all">Orçamento</a>
+        </div>
+    </header>
+
+    <!-- Parallax Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden" id="hero">
+        <!-- Parallax Background Layer -->
+        <!-- Will use JS to apply parallax effect to this div -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center parallax-bg" style="background-image: url('src/assets/hero.webp');" id="hero-bg"></div>
+        
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        
+        <!-- Content -->
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto mt-20">
+            <span class="block text-white/80 font-medium tracking-[0.2em] uppercase text-sm mb-4 fade-up">Alto Padrão em Marcenaria</span>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6 leading-tight fade-up delay-100">
+                O Seu Espaço, <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Perfeitamente Pensado.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light fade-up delay-200 max-w-2xl mx-auto">
+                Execução milimétrica e design sofisticado para residências e negócios no Vale do Sinos, Serra e Porto Alegre.
+            </p>
+            <div class="fade-up delay-300">
+                <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="inline-block bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Solicite seu Projeto
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <a href="#diferenciais" class="text-white/70 hover:text-white transition-colors">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Diferenciais (A Essência) -->
+    <section id="diferenciais" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-primary font-bold tracking-wider uppercase text-sm">Nossa Essência</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark mt-2">A Arte da Marcenaria de Alto Padrão</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                <!-- Diferencial 1 -->
+                <div class="bg-bglight p-10 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 fade-up delay-100 group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-drafting-compass text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-4 text-dark">Projetos Inteligentes</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Unimos funcionalidade e estética. Cada projeto é pensado exclusivamente para a sua rotina, otimizando seu espaço com elegância.
+                    </p>
+                </div>
+
+                <!-- Diferencial 2 -->
+                <div class="bg-bglight p-10 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 fade-up delay-200 group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-tools text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-4 text-dark">Execução Milimétrica</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Atenção obsessiva aos detalhes. Utilizamos apenas MDF e ferragens de primeira linha para garantir um acabamento impecável e durabilidade.
+                    </p>
+                </div>
+
+                <!-- Diferencial 3 -->
+                <div class="bg-bglight p-10 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 fade-up delay-300 group">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-handshake text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-4 text-dark">Compromisso Real</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Transparência do orçamento à montagem. Nosso maior valor é o respeito inegociável aos prazos combinados com o cliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Parceira de Arquitetos -->
+    <section id="arquitetos" class="py-24 bg-dark text-white relative overflow-hidden">
+        <!-- Abstract Background Shape -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-primary opacity-5 rounded-l-full transform translate-x-1/3"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                
+                <div class="lg:w-1/2 fade-up">
+                    <div class="relative">
+                        <!-- We will use a nice image here later -->
+                        <div class="aspect-square bg-gray-800 rounded-2xl overflow-hidden relative">
+                            <img src="src/assets/arch-bg.jpg" alt="Marcenaria e Arquitetura" class="object-cover w-full h-full opacity-80" id="arch-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22800%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20800%22%20preserveAspectRatio%3D%22none%22%3E%3Crect%20width%3D%22800%22%20height%3D%22800%22%20fill%3D%22%232d3748%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22400%22%20font-family%3D%22sans-serif%22%20font-size%3D%2230%22%20fill%3D%22%234a5568%22%20text-anchor%3D%22middle%22%3EImagem%20Projetos%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        </div>
+                        <div class="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-xl shadow-2xl hidden md:block">
+                            <i class="fas fa-pencil-ruler text-4xl mb-2"></i>
+                            <p class="font-bold text-lg">Fidelidade Absoluta</p>
+                            <p class="text-sm opacity-90">ao seu projeto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 fade-up delay-200">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm">B2B / Profissionais</span>
+                    <h2 class="font-heading text-4xl lg:text-5xl font-bold mt-2 mb-6">Parceira de Arquitetos e Designers</h2>
+                    <p class="text-gray-400 text-lg mb-6 font-light leading-relaxed">
+                        Sabemos que o seu projeto é uma obra de arte e precisa ser tratado como tal. A Kerkhofen é especialista em ler, interpretar e executar projetos arquitetônicos com precisão milimétrica.
+                    </p>
+                    <ul class="space-y-4 mb-10 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-4"></i>
+                            <span>Respeito total às especificações do projeto.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-4"></i>
+                            <span>Comunicação direta e técnica com o profissional.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-4"></i>
+                            <span>Montagem limpa, pontual e supervisionada.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20projeto%20para%20arquitetos." target="_blank" class="inline-block border-2 border-primary text-white hover:bg-primary px-8 py-4 rounded-full font-semibold transition-all">
+                        Envie um projeto para orçamento
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio (Galeria) -->
+    <section id="portfolio" class="py-24 bg-bglight">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-primary font-bold tracking-wider uppercase text-sm">Nosso Trabalho</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark mt-2">Projetos Executados</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-6"></div>
+                <p class="text-gray-500 mt-6 max-w-2xl mx-auto">Conheça um pouco do nosso nível de acabamento e a transformação que levamos para a casa de nossos clientes.</p>
+            </div>
+
+            <!-- Grid Estilo Masonry Simples com CSS Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]">
+                
+                <!-- Item 1 -->
+                <div class="portfolio-item row-span-2 group fade-up">
+                    <img src="src/assets/p1.jpg" alt="Projeto Cozinha Kerkhofen" class="w-full h-full object-cover">
+                    <div class="portfolio-overlay">
+                        <span class="text-primary font-bold text-sm tracking-wider uppercase mb-1">Cozinha Planejada</span>
+                        <h4 class="text-white font-heading text-xl font-medium">Design & Funcionalidade</h4>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item group fade-up delay-100">
+                    <img src="src/assets/p2.jpg" alt="Projeto Sala Kerkhofen" class="w-full h-full object-cover">
+                    <div class="portfolio-overlay">
+                        <span class="text-primary font-bold text-sm tracking-wider uppercase mb-1">Living</span>
+                        <h4 class="text-white font-heading text-xl font-medium">Acabamento Premium</h4>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item row-span-2 group fade-up delay-200">
+                    <img src="src/assets/p3.jpg" alt="Projeto Quarto Kerkhofen" class="w-full h-full object-cover">
+                    <div class="portfolio-overlay">
+                        <span class="text-primary font-bold text-sm tracking-wider uppercase mb-1">Dormitório</span>
+                        <h4 class="text-white font-heading text-xl font-medium">Conforto Sob Medida</h4>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item row-span-2 group fade-up">
+                    <img src="src/assets/p4.jpg" alt="Projeto Banheiro Kerkhofen" class="w-full h-full object-cover">
+                    <div class="portfolio-overlay">
+                        <span class="text-primary font-bold text-sm tracking-wider uppercase mb-1">Banheiro</span>
+                        <h4 class="text-white font-heading text-xl font-medium">Otimização de Espaço</h4>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="portfolio-item group fade-up delay-100">
+                    <img src="src/assets/p5.jpg" alt="Projeto Home Office Kerkhofen" class="w-full h-full object-cover">
+                    <div class="portfolio-overlay">
+                        <span class="text-primary font-bold text-sm tracking-wider uppercase mb-1">Home Office</span>
+                        <h4 class="text-white font-heading text-xl font-medium">Elegância</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Antes dos Depoimentos -->
+            <div class="text-center mt-16 mb-12 fade-up">
+                <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="inline-block bg-primary text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    Quero um projeto com esse padrão
+                </a>
+            </div>
+            
+            <div class="text-center mt-6 fade-up">
+                <a href="https://www.instagram.com/kerkhofen_moveis/" target="_blank" class="inline-flex items-center text-dark font-semibold hover:text-primary transition-colors">
+                    <i class="fab fa-instagram text-2xl mr-3"></i>
+                    Ver mais projetos no nosso Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Avaliações -->
+    <section id="avaliacoes" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-primary font-bold tracking-wider uppercase text-sm">Depoimentos</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-dark mt-2">O Que Dizem Nossos Clientes</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-6"></div>
+                <p class="text-gray-500 mt-6 max-w-2xl mx-auto">Confira a experiência de quem já transformou seu ambiente com a Kerkhofen Móveis.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Avaliação 1 -->
+                <div class="bg-bglight p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 fade-up relative z-10 overflow-hidden">
+                    <i class="fas fa-quote-left text-6xl text-primary/10 absolute -top-2 -left-2 z-0"></i>
+                    <div class="flex text-yellow-400 mb-4 relative z-20">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 font-light leading-relaxed mb-6 italic relative z-20">
+                        "Trabalho impecável e entrega rigorosamente no prazo combinado. A equipe da Kerkhofen superou nossas expectativas com os móveis da cozinha e da sala. Acabamento de primeira linha!"
+                    </p>
+                    <div class="flex items-center relative z-20">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-dark font-bold mr-4">
+                            C
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark text-sm">Cliente Satisfeito</h4>
+                            <span class="text-xs text-gray-500">Avaliação do Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avaliação 2 -->
+                <div class="bg-bglight p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 fade-up delay-100 relative z-10 overflow-hidden">
+                    <i class="fas fa-quote-left text-6xl text-primary/10 absolute -top-2 -left-2 z-0"></i>
+                    <div class="flex text-yellow-400 mb-4 relative z-20">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 font-light leading-relaxed mb-6 italic relative z-20">
+                        "Como arquiteta, preciso de parceiros que executem meus projetos com fidelidade absoluta. A qualidade do MDF e das ferragens usadas por eles é excelente. Recomendo de olhos fechados."
+                    </p>
+                    <div class="flex items-center relative z-20">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-dark font-bold mr-4">
+                            A
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark text-sm">Parceiro Arquiteto</h4>
+                            <span class="text-xs text-gray-500">Avaliação do Google</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avaliação 3 -->
+                <div class="bg-bglight p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 fade-up delay-200 relative z-10 overflow-hidden">
+                    <i class="fas fa-quote-left text-6xl text-primary/10 absolute -top-2 -left-2 z-0"></i>
+                    <div class="flex text-yellow-400 mb-4 relative z-20">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 font-light leading-relaxed mb-6 italic relative z-20">
+                        "Atendimento nota 10 desde o primeiro contato até a montagem final. A equipe é muito cuidadosa e limpa. Transformaram nosso apartamento em um verdadeiro lar."
+                    </p>
+                    <div class="flex items-center relative z-20">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center text-dark font-bold mr-4">
+                            F
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark text-sm">Família Atendida</h4>
+                            <span class="text-xs text-gray-500">Avaliação do Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contato -->
+    <footer id="contato" class="bg-dark text-white pt-24 pb-12 border-t-4 border-primary">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-1 fade-up">
+                    <a href="#" class="font-heading font-bold text-3xl tracking-wider text-white inline-block mb-6">
+                        KER<span class="text-primary">K</span>HOFEN
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transformando projetos arquitetônicos em realidade através da marcenaria sob medida de alto padrão.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/kerkhofen_moveis/" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/KerkhofenMoveis" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://br.pinterest.com/kerkhofenmoveis/" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="fade-up delay-100">
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider text-sm">Navegação</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#hero" class="text-gray-400 hover:text-primary transition-colors text-sm">Início</a></li>
+                        <li><a href="#diferenciais" class="text-gray-400 hover:text-primary transition-colors text-sm">Nossa Essência</a></li>
+                        <li><a href="#arquitetos" class="text-gray-400 hover:text-primary transition-colors text-sm">Para Arquitetos</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-primary transition-colors text-sm">Projetos Executados</a></li>
+                        <li><a href="#avaliacoes" class="text-gray-400 hover:text-primary transition-colors text-sm">Avaliações</a></li>
+                    </ul>
+                </div>
+
+                <!-- Área de Atendimento -->
+                <div class="fade-up delay-200">
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider text-sm">Regiões Atendidas</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span>Vale do Sinos<br><span class="text-xs text-gray-500">(Dois Irmãos e região)</span></span>
+                        </li>
+                        <li class="flex items-start text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span>Serra Gaúcha</span>
+                        </li>
+                        <li class="flex items-start text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span>Porto Alegre</span>
+                        </li>
+                        <li class="flex items-start text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span>Litoral</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CTA Contato -->
+                <div class="fade-up delay-300">
+                    <h4 class="font-heading text-lg font-bold mb-6 text-white uppercase tracking-wider text-sm">Faça um Orçamento</h4>
+                    <p class="text-gray-400 text-sm mb-6">Fale com nossa equipe agora mesmo e dê o primeiro passo para realizar seu projeto.</p>
+                    <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors shadow-lg">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-12 flex flex-col md:flex-row justify-between items-center fade-up">
+                <p class="text-gray-500 text-sm text-center md:text-left mb-4 md:mb-0">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Kerkhofen Móveis. Todos os direitos reservados.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Design moderno para <span class="text-white font-medium">Marcenarias de Alto Padrão</span>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

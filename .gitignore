@@ -1,0 +1,12 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Raw images (já copiadas para src/assets)
+Captura de tela*.png
+Logo.jpg
+hero.webp
+
+# IDEs and Editors
+.vscode/
+.idea/

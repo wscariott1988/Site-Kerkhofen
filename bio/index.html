@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerkhofen Móveis - Links</title>
+    <meta name="description" content="Acesse nossos links oficiais. Marcenaria sob medida de alto padrão.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F12F37',
+                        bglight: '#E6E6E6',
+                        dark: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #E6E6E6; /* Fundo bglight */
+            background-image: radial-gradient(circle at top right, rgba(241, 47, 55, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(241, 47, 55, 0.03) 0%, transparent 40%);
+            color: #1a1a1a;
+        }
+        .link-card {
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(241, 47, 55, 0.15);
+            border-color: #F12F37;
+        }
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+        .logo-container::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #F12F37 0%, transparent 100%);
+            z-index: -1;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 px-6 font-sans">
+    
+    <div class="w-full max-w-md mx-auto text-center">
+        <!-- Logo -->
+        <div class="mb-6">
+            <div class="logo-container">
+                <img src="../src/assets/Logo.jpg" alt="Logo Kerkhofen" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-lg">
+            </div>
+        </div>
+        
+        <!-- Brand Name -->
+        <h1 class="font-heading text-2xl font-bold tracking-wide text-dark mb-1">
+            KER<span class="text-primary">K</span>HOFEN
+        </h1>
+        <p class="text-gray-600 font-medium text-sm mb-10 tracking-wide uppercase">Móveis Sob Medida</p>
+
+        <!-- Links Container -->
+        <div class="space-y-4 w-full">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5551984976986?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20sob%20medida." target="_blank" class="link-card block w-full bg-white border border-gray-200 shadow-sm rounded-xl p-4 flex items-center justify-between group">
+                <div class="w-10 h-10 rounded-full bg-green-50 text-green-500 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-colors">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </div>
+                <span class="font-semibold text-dark">Faça um Orçamento</span>
+                <i class="fas fa-chevron-right text-gray-400 group-hover:text-primary transition-colors"></i>
+            </a>
+
+            <!-- Website -->
+            <a href="../index.html" class="link-card block w-full bg-white border border-gray-200 shadow-sm rounded-xl p-4 flex items-center justify-between group">
+                <div class="w-10 h-10 rounded-full bg-red-50 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                    <i class="fas fa-globe text-xl"></i>
+                </div>
+                <span class="font-semibold text-dark">Acesse nosso Site</span>
+                <i class="fas fa-chevron-right text-gray-400 group-hover:text-primary transition-colors"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/KerkhofenMoveis" target="_blank" class="link-card block w-full bg-white border border-gray-200 shadow-sm rounded-xl p-4 flex items-center justify-between group">
+                <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </div>
+                <span class="font-semibold text-dark">Facebook</span>
+                <i class="fas fa-chevron-right text-gray-400 group-hover:text-primary transition-colors"></i>
+            </a>
+
+            <!-- Pinterest (Optional/Placeholder) -->
+            <a href="https://accounts-oauth.pinterest.com/kerkhofenmoveis/" target="_blank" class="link-card block w-full bg-white border border-gray-200 shadow-sm rounded-xl p-4 flex items-center justify-between group">
+                <div class="w-10 h-10 rounded-full bg-red-50 text-red-600 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i class="fab fa-pinterest-p text-xl"></i>
+                </div>
+                <span class="font-semibold text-dark">Inspirações no Pinterest</span>
+                <i class="fas fa-chevron-right text-gray-400 group-hover:text-primary transition-colors"></i>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 text-xs font-medium">
+                Serra Gaúcha | Vale do Sinos | Porto Alegre<br>
+                &copy; <script>document.write(new Date().getFullYear())</script> Kerkhofen Móveis
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
