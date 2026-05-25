@@ -2,10 +2,10 @@
 .DS_Store
 Thumbs.db
 
-# Raw images (já copiadas para src/assets)
-Captura de tela*.png
-Logo.jpg
-hero.webp
+# Raw images (apenas na raiz)
+/Captura de tela*.png
+/Logo.jpg
+/hero.webp
 
 # IDEs and Editors
 .vscode/
